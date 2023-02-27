@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  
+</head>
+<body>
+
+<div class="container">
+  <form method="post" action="mailto:jaspalvermabusiness@gmail.com">
+    
+    <h1>Payment Form</h1>
+    <h2>Contact Details</h2>
+    
+    <p>
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" required placeholder="please enter your full name" autofocus>
+    </p>
+    
+    <p>
+    <label for="father's_name">Father's Name: </label>
+    <input type="text" name="name" id="father's_name" required placeholder="enter your father's name">
+    </p>
+    
+    <fieldset>
+      <legend>Gender: </legend>
+    <ul type="square">
+    <li><label for="male">Male<input type="radio" name="gender" id="male" value="male" ></label></li>
+      <li><label for="female">Female<input type="radio" name="gender" id="female" value="female" ></label></li>
+      <li><label for="others">Others<input type="radio" name="gender" id="others" value="others"> </label></li>
+      </ul>
+      </fieldset>
+      
+      <p>
+      <label for="dob">Date Of Birth: </label>
+      <input type="date" name="dob" id="dob"required>
+      </p>
+      
+    <p>
+    <label for="email">Email: </label>
+    <input type="email" placeholder="please enter a valid email.." required name="email" id="email">
+    </p>
+    
+    <p>
+      <label for="pincode">Pincode: </label>
+      <input type="number" name="pincode" id="pincode" required placeholder="e.g., 012345.... , etc.">
+    </p>
+    
+    <p>
+    <label for="address">Address: </label>
+    <textarea name="address" id="address" cols="40" rows="5" placeholder="(optional) Enter your address for safety"></textarea>
+    </p>
+    
+    <!-- now start payment details-->
+    <h2>Payment Details</h2>
+    
+       <p> <details>
+      <summary>Pay by card</summary>
+      
+      <p>         
+    <label for="card">Card Type: </label>
+    <select name="card" id="" required>
+      <option value="">__Select a card type__</option>
+      <option value="rupay">Rupay</option>
+      <option value="master">Master</option>
+      <option value="visa">Visa</option>
+      </select
+      </p>
+    
+    <p>
+    <label for="card_number">Card Number: </label>
+    <input type="number" name="card" id="card_number" required placeholder="Enter 16 digits valid card no." checked length="16">
+    </p>
+    
+    <p>
+      <label for="expiry_date">Expiry Date: </label>
+      <input type="month" name="card" id="expiry_date" required>
+    </p>
+    
+    <p>
+      <label for="cvv">CVV</label>
+      <input type="password" name="card" id="cvv" required placeholder="Enter 3 digits cvv no." maxlength="3">
+    </p>
+    
+    </details>
+    </p>
+    
+    <p>
+    <details>
+        <summary>Pay with UPI</summary>
+  
+        <p>
+        <label for="upi"> UPI ID: </label>
+        <input type="text" name="upi" id="upi" requied>
+        </p>
+        
+      </details>
+      </p>
+    
+    <input type="submit" value="Pay Now">
+    
+  </form>
+
+
+</div>
+</body>
+
+</html>
